@@ -12,6 +12,9 @@ fi
 
 LASTPATH="$(kdialog --inputbox "Mount point" "$LASTPATH")"
 
+# User hit cancel
+[[ "$1" = "" ]] && exit 1
+
 if [[ ! -d "$LASTPATH" ]]; then
 	kdialog --error "There is no directory named '$LASTPATH'."
 	exit 1
