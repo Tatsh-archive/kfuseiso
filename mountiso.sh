@@ -23,7 +23,7 @@ fi
 ./umountiso.sh "$LASTPATH"
 
 fuseiso "$1" "$LASTPATH" 2> ~/.kisomount-log
-(($? != 0)) && kdialog -error "There was an error mounting." && exit 1
+(($? != 0)) && kdialog --error "There was an error mounting." && exit 1
 
 echo "$LASTPATH" > ~/.kfuseisomount-last
 rm -f ~/.kfuseisomount-last
