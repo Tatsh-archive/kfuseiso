@@ -1,5 +1,8 @@
 #!/bin/sh
 
+DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$DIR"
+
 [[ "$1" = "" ]] && kdialog --error "No ISO file specified." && exit 1
 
 LASTPATH=""
