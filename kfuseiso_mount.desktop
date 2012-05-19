@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Service
+Actions=MountImage;
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-cd-image
+
+[Desktop Action MountImage]
+Exec=/usr/share/kfuseiso/mountiso.sh %F
+Name=Mount image
