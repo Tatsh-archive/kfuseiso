@@ -6,4 +6,5 @@ MimeType=application/x-cd-image
 
 [Desktop Action MountImage]
 Exec=/usr/share/kfuseiso/mountiso.sh %F
-Name=Mount image
+Name=Mount
+Icon=unknownapp
