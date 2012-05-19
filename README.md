@@ -2,6 +2,20 @@
 
 ## Gentoo
 
+Install layman:
+
+```bash
+emerge layman
+```
+
+Add my overlay and install:
+
+```bash
+layman -o http://tatsh.github.com/tatsh-overlay/layman.xml -a tatsh-overlay
+echo 'kde-misc/kfuseiso ~amd64' >> /etc/portage/package.keywords
+emerge kde-misc/kfuseiso
+```
+
 ## Others
 
 Install [FuseISO](http://sourceforge.net/projects/fuseiso/) (preferably through your package manager).
